@@ -1,0 +1,48 @@
+#tabbed_menu
+{
+   
+}
+#tabbed_menu ul.tabs li
+{
+    text-align: center; 
+    width: 150px;
+    height: 20px;
+    background:grey;
+    display:inline-block;
+    font-size:14px;
+    font-family:verdana;
+}
+#tabbed_menu ul.tabs
+{
+    background:#00bbff;
+}
+.notes .show_note ul.top_row li
+{
+    display:inline-block;
+    border-right: 1px solid;
+    padding-right: 10px;
+    font-family:verdana;
+}
+.notes .show_note ul.bottom_row li
+{
+    background: #F3F781;
+    text-decoration:none;
+    list-style-type:none;
+    padding-left: 10px;
+    font-size: 11px;
+    font-family:verdana;
+}
+.notes .show_note
+{
+    border-bottom:1px solid;
+    
+}
+ul.top_row li 
+{
+    font-size:12px;
+}
+#tabs_data
+{
+    width:97%;
+    margin:0 auto;
+}

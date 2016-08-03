@@ -1,0 +1,504 @@
+/*-----THIS WILL INCLUDE DYNAMIC STYLES, SUCH AS HEADER , SIDE MENUS , FOOTER, ETC.----*/
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Oswald);  /*google font : font-family: 'Oswald', sans-serif;*/
+@import url(http://fonts.googleapis.com/css?family=Raleway:100); /*font-family: 'Raleway', sans-serif;*/
+
+/*----------SECTION FOR SPECIAL ICONS----------*/
+@font-face {
+  font-family: 'icon';
+  src: url('../font/icomoon.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../font/icomoon.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â5 */
+}
+.icon-home:before {
+	font-family: 'icon';
+	speak: none;
+	content: "\e600  ";
+}
+.icon-about:before {
+	font-family: 'icon';
+	speak: none;
+	content: "\e675  ";
+	
+}
+.icon-gallery:before {
+font-family: 'icon';
+	speak: none;
+	content: "\e60e  ";
+}
+.icon-buy:before {
+font-family: 'icon';
+	speak: none;
+	content: "\e638  ";
+}
+.icon-contact:before {
+font-family: 'icon';
+	speak: none;
+	content: "\e63c  ";
+}
+.icon-facebook:before {
+font-family: 'icon';
+	speak: none;
+	content: "\e769  ";
+}
+.icon-twitter:before {
+font-family: 'icon';
+	speak: none;
+	content: "\e76d  ";
+}
+.icon-linkedin:after {
+	font-family: 'icon';
+	speak: none;
+	content: "\e79f  ";
+	color: #4875B4;
+}
+.icon-menu1:after {
+	font-family: 'icon';
+	speak: none;
+	content: "\e6b8  ";
+	
+	float: right;
+	color: #663333;
+}
+.icon-search:after {
+	font-family: 'icon';
+	speak: none;
+	content: "\e67f  ";
+	
+	float: right;
+	color: #663333;
+}
+
+
+
+
+/*----------END SECTION FOR SPECIAL ICONS----------*/
+body
+{
+	margin:0;
+	background: url('../images/white_wall_hash.png');
+}
+header
+{
+    display:inline-block;
+    width:20%;
+    -moz-box-shadow: 3px 3px 5px 6px #cccccc;  
+    -webkit-box-shadow: 3px 3px 5px 6px #cccccc;  
+    box-shadow: 3px 0px 5px 3px #cccccc;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    vertical-align: top;
+    max-width: 250px;
+    min-width: 140px;
+	background:#fff;
+	margin-bottom: 3em;
+}
+header #nav_page
+{
+
+}
+header #nav_page .logo
+{
+    border-bottom: 1px solid #cccccc;
+
+}
+header #nav_page .logo h2
+{
+    font-family: 'Oswald', sans-serif;
+
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+header #nav_page .account
+{
+    border-bottom: 1px solid #cccccc;
+
+}
+header #nav_page .account ul
+{
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+}
+header #nav_page .account ul li
+{
+    margin-bottom: .5em;
+
+}
+header #nav_page #nav
+{
+
+}
+header #nav_page #nav ul li.main
+{
+    font-family: 'verdana', sans-serif;
+	
+    color: #000;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: left;
+    margin-left: .2em;
+    margin-right: .3em;
+    cursor: pointer;
+}
+header #nav_page #nav ul ul
+{
+	margin:0;
+	padding:0;	
+}
+header #nav_page #nav ul ul li
+{
+	list-style-type:none;
+	margin: .5em;
+}
+header #nav_page #nav ul ul li a
+{
+	text-decoration:none;
+	color:#000;
+	font-family:verdana;
+	font-size:.9em
+}
+/* ANOTHER SECTION FOR THE BODY */
+#right_wrapper
+{
+	display:inline-block;
+	width:75%;
+	margin-bottom:3em;
+	max-width:999px;
+}
+.wrapper
+{
+    margin-bottom: .5em;
+	vertical-align:top;
+    width: 100%;
+margin-left: 10px;
+display: inline-block;
+-moz-box-shadow: 0 0 5px #000;
+-webkit-box-shadow: 0 0 5px #000;
+
+    box-shadow: 0px 0px 5px #cccccc;
+	background:#fff;
+}
+.half_wrapper
+{
+    margin-bottom: .5em;
+
+    width: 48%;
+
+margin-left: 10px;
+margin-right: 10px;
+display: inline-block;
+
+max-width: 900px;
+-moz-box-shadow: 0 0 5px #000;
+-webkit-box-shadow: 0 0 5px #000;
+
+    box-shadow: 0px 0px 5px #cccccc;
+	background:#fff;
+}
+
+ul.maina {
+    list-style:none;
+    padding-left:0;
+}
+
+/*---------section for the displayed lines in work orders----*/
+.rows
+{
+	font-size:.9em;
+	margin:0;
+	padding: 0;
+}
+ul.rows li
+{
+	font-family:verdana;
+	height:2em;
+	overflow:hidden;
+}
+/*---------ID main_search_button USED IN THE SEARCH_VIEW.PHP TO DISPLAY SEARCH STYLES------------*/
+#main_search_button
+{
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: 0;
+}
+#userInput
+{
+	border: 0;
+	height: 1.5em;
+}
+#search_box
+{
+	border: 1px solid #cccccc;
+	display:inline-block;
+	margin:1em;
+}
+#userOptions
+{
+	border: 1px solid #cccccc;
+}
+/* --------BELOW ARE SOME STYLING FOR TOP OF WIDGET DATA....EX. ID = EXITWIDGET---*/
+.exitWidget
+{
+	background: red;
+	border:none;
+	margin: .5em;
+	float: right;
+	color: #fff;
+}
+/* --------END EXITWIDGET Style---*/
+
+
+.inline
+{
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid
+    
+;
+}
+.wo_id
+{
+    width: 10%;
+}
+.user
+{
+    width: 25%;
+}
+.description
+{
+    width: 35%;
+}
+.state
+{
+    width: 15%;
+}
+.imp_left
+{
+   width: auto;
+   max-width:500px;
+   display: inline-block;
+}
+.imp_left ul li
+{
+    display: block;
+    font-family: verdana;
+    font-size: 12px;
+    padding-bottom: 10px;
+
+}
+.imp_left ul li input
+{
+    font-size: 10px;
+    font-family: verdana;
+    display:inline-block;
+    width: 200px;
+}
+.imp_left ul li label
+{
+    display:inline-block;
+    width: 100px;
+}
+.imp_right
+{
+   width: auto;
+   max-width:500px;
+   display: inline-block;
+}
+.imp_right ul li
+{
+    font-size: 12px;
+    font-family: verdana;
+     padding-bottom: 10px;
+     display: block;
+}
+.imp_right ul li input
+{
+    font-size: 10px;
+    font-family: verdana;
+    display:inline-block;
+    width: 200px;
+}
+.imp_right ul li label
+{
+    display:inline-block;
+    width: 100px;
+}
+.imp_whole
+{
+    margin-bottom: 20px;
+    border-bottom:1px dashed;
+    border-top:1px dashed;
+}
+.imp_whole ul li
+{
+     font-size: 14px;
+    font-family: verdana;
+     padding-bottom: 10px;
+     display: block;
+}
+.imp_whole ul li label
+{
+    display: inline-block;
+    width:100px;
+}
+.imp_whole ul li.short_descrip input
+{
+    width: 98%;
+    max-width:700px;
+    font-family: verdana;
+
+}
+.imp_whole ul li.new_notes input
+{
+    width: 98%;
+    max-width: 700px;
+    height: 50px;
+    font-family: verdana;
+
+}
+#second_sec
+{
+    max-width:900px;
+}
+
+/*-----------THIS IS STYLING FOR THE TOP BAR WITH THE ID HEADER-------------*/
+
+.header
+{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:0;
+    background:#00bbff;
+    height:45px;
+    width:100%;
+}
+.header .left
+{
+    display:inline-block;
+    width: 40%;
+    padding-left: 20px;
+}
+.header .right
+{
+    display:inline-block;
+    width: 40%;
+    text-align:right;
+}
+.header .right ul li
+{
+    display: inline-block;
+}
+h3 
+{
+    font-family:verdana;
+     margin:0px;
+    padding:0px;
+}
+
+/*-----------------TOP SEC ID STYLE --------------*/
+#top_sec 
+{
+    background: #C43333; 
+    width:100%;
+}
+#top_sec h3
+{
+    font-family: 'Oswald', sans-serif;
+	text-align: left;
+	font-size: 2em;
+	margin: 0;
+}
+#top_sec .left
+{
+    display:inline-block;
+    width:40%;
+}
+#top_sec .right ul
+{
+    list-style:none;
+     margin:0px;
+    padding:0px;
+}
+#top_sec .right ul li 
+{
+    list-style-type:none;
+    text-align:right;
+     margin:0px;
+    padding:0px;
+}
+#top_sec .right
+{
+    display:inline-block;
+    margin:.5em;
+	float:right;
+}
+#bottom_bar
+{
+
+}
+ul#bottom_bar_menu
+{
+	position:fixed;
+	bottom:0px;
+	left:0;
+	width:100%;
+	background:#fff;
+	margin:0;
+	-moz-box-shadow: 0 0 15px #000;
+-webkit-box-shadow: 0 0 15px #000;
+    box-shadow: 0px 0px 15px #cccccc;
+	padding:0;
+}
+ul#bottom_bar_menu li
+{
+	display:inline-block;
+}
+ul#bottom_bar_menu li#open_widget_button
+{
+	float:right;
+}
+ul#bottom_bar_menu li#open_widget_button button
+{
+	font-size:2em;
+}
+ul#bottom_menu 
+{
+	position:fixed;
+	display:none;
+	bottom:3em;
+	right:0;
+	background: #fff;
+}
+h1.note_title
+{
+	font-family: 'Oswald', sans-serif;
+text-align: left;
+font-size: 2em;
+margin: 0;
+}
+div.new_note
+{	
+font-family: 'verdana', sans-serif;
+text-align: left;
+font-size: 1em;
+margin: 0;
+}
+.widget_header
+{
+	overflow: hidden;  /*THIS IS TO KEEP THE WIDGET BAR ON TOP OF THE WIDGETS*/
+}
+.resize     
+{
+	background: purple;
+border: none;
+margin: .5em;
+float: right;
+color: #fff;
+text-transform:uppercase;
+}
